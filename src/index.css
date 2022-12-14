@@ -382,8 +382,8 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	left: 10%;
-	width: 35%;
-	min-height: 50vh;
+	width: 50%;
+	gap: 60px;
 }
 
 .landingPageWelcome {
@@ -411,10 +411,12 @@ body {
 .textMain {
 	font-family: "Manrope";
 	font-style: normal;
+	font-size: var(--fs-800);
 	font-weight: 700;
-	font-size: 4em;
 	text-transform: uppercase;
 	color: hsl(var(--clr-white));
+	display: flex;
+	width: 100%;
 }
 
 .textDescription {
