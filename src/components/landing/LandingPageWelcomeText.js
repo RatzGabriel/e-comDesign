@@ -10,7 +10,7 @@ function LandingPageWelcomeText({ landinPageText }) {
 	return (
 		<div className="landingPageWelcomeText">
 			<p className="textTitle">{newTrue ? "NEW PRODUCT" : null}</p>
-			<p className="textMain">{mainText}</p>
+			<h3 className="textMain">{mainText}</h3>
 			<p className="textDescription">{description}</p>
 			<div className="buttonCenter">
 				<button className="buttonLanding">{buttonText}</button>

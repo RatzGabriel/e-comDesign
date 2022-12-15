@@ -139,6 +139,10 @@ select {
 	width: 100%;
 }
 
+.height50 {
+	height: 50vh;
+	background-color: white;
+}
 .width30 {
 	width: 30%;
 }
@@ -161,6 +165,10 @@ select {
 
 .height100 {
 	height: 100%;
+}
+
+.marginTop {
+	margin-top: 20em;
 }
 
 .grid {
@@ -276,9 +284,6 @@ select {
 }
 
 body {
-	background-size: cover;
-	background-position: bottom center;
-	background-repeat: no-repeat;
 }
 
 /* ----------------------------- */
@@ -393,6 +398,7 @@ body {
 	background-position: center center;
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 }
 
 .textTitle {
@@ -456,23 +462,30 @@ body {
 		margin: 0 auto;
 		left: 0;
 		text-align: center;
+		gap: 20px;
 	}
 	.buttonCenter {
 		display: flex;
 		justify-content: center;
 	}
+	.textMain {
+		font-size: var(--fs-700);
+	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.landingPageWelcome {
 		background-image: url(/src/assets/home/mobile/image-header.jpg);
 		background-size: contain;
+	}
+	.textMain {
+		font-size: 3em;
 	}
 }
 
 @media (min-width: 1024px) {
 	.landingPageWelcome {
 		background-image: url(/src/assets/home/desktop/image-hero.jpg);
-		height: 90vh;
+		min-height: 90vh;
 	}
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import FeaturedRow from "../components/landing/featuredRow/FeaturedRow";
 import LandingPageWelcomeText from "../components/landing/LandingPageWelcomeText";
 import data from "../data/data.json";
 
@@ -14,6 +15,7 @@ function home() {
 	return (
 		<div className="landingPageWelcome">
 			<LandingPageWelcomeText landinPageText={landinPageText} />
+			<FeaturedRow />
 		</div>
 	);
 }
